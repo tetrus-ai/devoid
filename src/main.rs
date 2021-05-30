@@ -72,7 +72,7 @@ fn update_mouse_position(
 fn select_unit(
     mouse_button_input: Res<Input<MouseButton>>,
     mouse_position: Res<MousePosition>,
-    mut query: Query<(&Unit, &Owned, &SpriteBundle)>,
+    query: Query<(&Unit, &Owned, &SpriteBundle)>,
 ) {
     if mouse_button_input.just_released(MouseButton::Left) {
         info!("hey");
